@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Background Radio Button</title>
+</head>
+<body>
+  <!-- <h1>Select Background Color</h1>
+  <input type="radio" name="color" id="color1" value="#ff0000"> Red<br>
+  <input type="radio" name="color" id="color2" value="#00ff00"> Green<br>
+  <input type="radio" name="color" id="color3" value="#0000ff"> Blue<br>
+
+  <div>
+    <button onclick="applyBackgroundColor()">Apply Background Color</button>
+  </div>
+
+  <script>
+    function applyBackgroundColor() {
+      var selectedColor;
+      var colorOptions = document.getElementsByName("color");
+      for (var i = 0; i < colorOptions.length; i++) {
+        if (colorOptions[i].checked) {
+          selectedColor = colorOptions[i].value;
+          break;
+        }
+      }
+      if (selectedColor) {
+        document.body.style.backgroundColor = selectedColor;
+      } else {
+        alert("Please select a color option.");
+      }
+    }
+  </script> -->
+  <h1>Select Background Color</h1>
+  <select id="colorSelect">
+    <option value="">-- Select a color --</option>
+    <option value="#ff0000">Red</option>
+    <option value="#00ff00">Green</option>
+    <option value="#0000ff">Blue</option>
+  </select>
+
+  <div>
+    <button onclick="applyBackgroundColor()">Apply Background Color</button>
+  </div>
+
+  <script>
+    function applyBackgroundColor() {
+      var selectBox = document.getElementById("colorSelect");
+      var selectedColor = selectBox.value;
+      
+      if (selectedColor) {
+        document.body.style.backgroundColor = selectedColor;
+      } else {
+        alert("Please select a color from the dropdown.");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

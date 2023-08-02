@@ -1,0 +1,43 @@
+main{
+	   height: 800px;
+	   width: 900px;
+	   background:pink;
+	   }
+	   .sub1{
+		   height: 200px;
+		   width: 900px;
+		   background:blue;
+       }
+       .sub2{
+           height: 200px;
+		   width: 900px;
+		   background:darkgreen;
+	   }
+	   .sub3{
+		   height: 200px;
+		   width: 900px;
+		   background:skyblue;
+	   }
+	   .sub4{
+		   height: 200px;
+		   width: 900px;
+		   background:grey;
+	   }
+	   .subdiv1{
+	   	   height:200px;
+	   	   width: 300px;
+	   	   background:black;
+	   }
+	   .subdiv2{
+	   	   height:200px;
+	   	   width: 300px;
+	   	   background:brown;
+	   }
+	   .subdiv3{
+	   	   height:200px;
+	   	   width: 300px;
+	   	   background:maroon;
+	   }
+
+	   
+	

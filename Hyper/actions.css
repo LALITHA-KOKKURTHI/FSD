@@ -1,0 +1,41 @@
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style the menubar */
+.menubar {
+  background-color: #f2f2f2;
+}
+
+.menubar ul {
+  display: flex;
+}
+
+.menubar li {
+  padding: 15px 20px;
+}
+
+/* Style the dropdown content to be hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+}
+
+/* Show the dropdown content when hovering over the dropdown item */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+

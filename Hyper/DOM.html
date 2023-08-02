@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+    <h2>DOM means Document Object Model</h2>
+    <p id="para">this is sample para</p>
+    <p id="para1">this is sample para</p>
+    
+
+
+    
+    <script type="text/javascript">
+    	let doc=document;
+    	console.log(doc);
+    	document.getElementById('para').innerText="This is updated para" ;
+    	document.getElementById('para').style.color='red' ;
+    	document.getElementById('para1').innerHTML='<p>This is paragraph with HTML</p>' ;   
+    /*   document.getElementById('fname_id').value='Lalli';*/
+    </script>
+</body>
+</html>

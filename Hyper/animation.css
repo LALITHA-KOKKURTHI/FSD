@@ -1,0 +1,11 @@
+div{
+		width:100px;
+		height:100px;
+		background-color:red;
+		animation-name:sample;
+		animation-duration:4s;
+	}
+	@keyframes sample{
+		from{background-color:red;}
+		to{background-color:pink;}
+	}

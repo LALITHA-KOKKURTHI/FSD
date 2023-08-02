@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>By using class name</title>
+</head>
+<body>
+   <p class="para">para1</p>
+   <p class="para">para2</p>
+   <p class="para">para3</p>
+
+
+
+</body>
+<script type="text/javascript">
+	let paras=document.getElementsByClassName('para');
+	console.log(paras);
+	paras[1].style.fontSize="50px";
+	paras[0].innerTEXT="ModifiedText";
+	paras[2].style.color="blue";
+</script>
+</html>
