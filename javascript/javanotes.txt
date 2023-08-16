@@ -1,0 +1,9 @@
+in javascript we take document.write and console.log and alert for execution.
+we take names in double quotes.
+in js we can write two names with one var by using concatination(+).
+we can give length of the name with name.length.
+in js  there is no float and integer all numbers consider as numbers.
+if variable doesnot assigned any variable then it is undefined.
+without assigning any value and add + symbol and give any name we get undefined + name.
+in js no arrays it treated as object.
+in js it will  take all types of data types in array.

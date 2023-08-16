@@ -1,0 +1,28 @@
+div{
+	height: 100px;
+	width: 100px;
+	background: pink;
+}
+input[type]{
+	color: red;
+}
+input[type="text"]{
+	color: green;
+	font-size: 20px;
+}
+input[type="number"]{
+	color: violet;
+	font-size: 20px;
+}
+input[type]{
+	color: red;
+	font-size: 20px;
+}
+a[href]{
+	color: hotpink;
+	font-size: 20px;
+}
+img[src]{
+	color: violet;
+	font-size: 20px;
+}

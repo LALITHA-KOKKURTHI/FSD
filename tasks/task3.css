@@ -1,0 +1,64 @@
+div{
+	height:300px;
+	width:600px;
+	border:1px solid white;
+	background-color: white;
+
+}
+.a{
+	margin-top:30px;
+	margin-left:30px;
+	height:250px;
+	width:150px;
+	float:left;
+    border:1px solid white;
+    border-radius: 5px;
+    text-align:center;
+    background-color: white;
+}
+p{
+	text-align:center;
+}
+button{
+	height:30px;
+	width:80px;
+	background-color:blue;
+	border-radius:30px;
+	
+	
+}
+i{
+	
+	color:white;
+	font-size: 50px;
+	padding-left:20px;
+	height:55px;
+	width:50px;
+	background-color: blue; 
+
+
+
+}
+
+.b{
+	margin-top:30px;
+	margin-left:30px;
+	height:250px;
+	width:150px;
+	float:left;
+	border:1px solid white;
+	 border-radius: 5px;
+	 text-align:center;
+	 background-color: white;
+}
+.c{
+	margin-top:30px;
+	margin-left:30px;
+	height:250px;
+	width:150px;
+	float:left;
+	border:1px solid white;
+	border-radius: 5px;
+	text-align:center;
+	background-color: white;
+}
