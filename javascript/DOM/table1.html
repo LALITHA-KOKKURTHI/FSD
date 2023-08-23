@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Table Creation</title>
+</head>
+<body>
+  <table id="courseTable" border="2">
+    <tr>
+      <th>Course name</th>
+      <th>course number</th>
+      <th>Course fees</th>
+      <th>Place</th>
+    </tr>
+    <tbody id="tbodyid"></tbody>
+  </table>
+
+  <script>
+    var courses = [{
+      'name':'html',
+      'number':'23423',
+      'fees':'235',
+      'place':'dwp'
+    },
+    {
+      'name':'css',
+      'number':'65687',
+      'fees':'567',
+      'place':'dwp'
+    },
+    {
+      'name':'javascript',
+      'number':'67845',
+      'fees':'7656',
+      'place':'dwp'
+    }]
+
+    /*var table = document.getElementById("courseTable");
+
+    // Create rows and cells using a for loop
+    for (var i = 0; i < courses.length; i++) {
+      var row = table.insertRow(i + 1); // Start from index 1 to skip the header row
+
+      var cellName = row.insertCell(0);
+      cellName.innerHTML = courses[i].name;
+
+      var cellNumber = row.insertCell(1);
+      cellNumber.innerHTML = courses[i].number;
+
+      var cellFees = row.insertCell(2);
+      cellFees.innerHTML = courses[i].fees;
+
+      var cellPlace = row.insertCell(3);
+      cellPlace.innerHTML = courses[i].place;
+    }*/
+    for(i=0;i<=courses.length-1;i++)
+    {
+      let tr = document.createElement('tr')
+      let td = document.createElement('td')
+      let td = document.createElement('td')
+      let td = document.createElement('td')
+      let td = document.createElement('td')
+      td1.innerText = courses[i].name
+      td2.innerText = courses[i].cno
+      td3.innerText = courses[i].fees
+      td4.innerText = courses[i].places
+      tr.append(td1)
+      tr.append(td2)
+      tr.append(td3)
+      tr.append(td4)
+      document.getElementById('tbodyid').append(tr)
+
+    }
+  </script> 
+</body>
+</html>

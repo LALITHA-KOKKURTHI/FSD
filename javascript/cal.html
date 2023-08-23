@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+		#a{
+			text-align:right;
+			height:30px;
+		}
+		th:not(#a){
+			cursor:pointer;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<center><table border="1" style="height:300px;width:200px;">
+		<tr>
+			<th id="a" colspan="4"></th>
+		</tr>
+		<tr>
+			<th onclick="getnum('9')">9</th>
+			<th onclick="getnum('8')">8</th>
+			<th onclick="getnum('7')">7</th>
+			<th onclick="getnum('/')">/</th>
+			
+		
+		</tr>
+		<tr>
+			<th onclick="getnum('6')">6</th>
+			<th onclick="getnum('5')">5</th>
+			<th onclick="getnum('4')">4</th>
+			<th onclick="getnum('*')">*</th>
+		</tr>
+		<tr>
+			<th onclick="getnum('3')">3</th>
+			<th onclick="getnum('2')">2</th>
+			<th onclick="getnum('1')">1</th>
+			<th onclick="getnum('-')">-</th>
+		</tr>
+		<tr>
+			<th onclick="getnum('0')">0</th>
+			<th onclick="clearall()">C</th>
+			<th onclick="getnum('=')">=</th>
+			<th onclick="getnum('+')">+</th>
+		</tr>
+	</table>
+</center>
+<script type="text/javascript">
+	 function getnum(val) {
+      
+        if(val == '='){
+        var res = document.getElementById('a').innerText;
+        document.getElementById('a').innerText = eval(res);
+    }
+    else{
+        document.getElementById('a').innerText += val
+        
+      
+    }
+    }
+    function clearall()
+    {
+      document.getElementById('a').innerText ='';  
+    }
+</script>
+
+
+
+	}
+	}
+</script>
+
+</body>
+</html>

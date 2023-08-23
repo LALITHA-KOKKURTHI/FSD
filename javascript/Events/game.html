@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loss or win</title>
+   <style>
+   
+   #a{
+      
+            height: 20px;
+            border-radius: 10px;
+            border: 2px solid grey;
+            color:grey;
+       }
+          input[type="radio"]
+        {
+            color: grey;
+        }
+        #goo{
+        	 height: 30px;
+            width: 100px;
+            color: white;
+              background-color: grey;
+
+            border-radius: 15px;
+            border: 0;
+
+        }
+          }
+        #goo:hover {
+            
+             
+            cursor: pointer;   
+        }
+
+
+   		
+   </style>
+ 
+</head>
+<body>
+	<center>
+		<div style="height: 400px;width: 500px; background-color: rgb(255,192,203);border-radius: 20px;">
+			<h1>play a game</h1>
+			 <input type="radio" name="n1" value="1">
+			 <input type="radio" name="n1" value="2"><input type="radio" name="n1" value="3"><input type="radio" name="n1" value="4"><input type="radio" name="n1" value="5"><br><br>
+			 <p id="a"></p><br><br>
+			 <button onclick="go()"
+			 id="goo">GO!</button>
+			 <p id="result"></p>
+			</div>
+		</center>
+		<script>
+		go=()=>
+		{
+			let ga=Math.floor(Math.random()*5)+1;
+			document.getElementById("a").innerText=ga;	
+			let grd=document.querySelector('input[name="n1"]:checked').value;
+			if(grd == ga){
+                document.getElementById("result").innerText="You won!";
+			}
+			else{
+                document.getElementById("result").innerText="You lost!";
+			}
+					
+
+		}
+
+    </script>
+
+
+</body>
+
+</html>
+
+<!-- </body>
+</html> -->

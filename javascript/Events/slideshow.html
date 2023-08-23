@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slideshow</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+
+		.slideshow-container{
+	  position:relative;
+	  max-width:1000px;
+	  margin:auto;
+
+   }
+	.slide{
+      display: none;
+}
+		img{
+			width: 50% ;
+		}
+		fade{
+			animation: fadeEffect 3s ease-in-out infinite;
+		}
+		@keyframes fadeEffect{
+			0%{
+				opacity: :0;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="slideshow-container">
+		<div class="slide fade">
+			<img src="images/1.jpeg"alt="image 2">
+		</div>
+		<div class="slide fade">
+			<img src="images/2.jpeg"alt="image 3">
+		</div>
+		<div class="slide fade">
+			<img src="images/3.jpeg"alt="image 4">
+		</div>
+		<div class="slide fade">
+			<img src="images/4.jpeg"alt="image 5">
+		</div>
+		<div class="slide fade">
+			<img src="images/5.jpeg"alt="image 6">
+		</div>
+		<div class="slide fade">
+			<img src="images/6.jpeg"alt="image 7">
+		</div>
+		<div class="slide fade">
+			<img src="images/7.jpeg"alt="image 7">
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		let slideIndex=0;
+		function showSlides() {
+		let slides=document.getElementsByClassName("slide");
+		for(let i=0;i<slides.length;i++){
+			slides[i].style.display="none";
+		}
+		slideIndex++;
+		if(slideIndex>slides.length){
+			slideIndex=1;
+		}
+		slides[slideIndex-1].style.display ="block";
+	    setTimeout(showSlides, 3000);
+	}
+	showSlides();
+
+</script>
+
+</body>
+</html>

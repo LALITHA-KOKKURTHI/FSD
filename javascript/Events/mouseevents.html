@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mouseevents</title>
+</head>
+<body>
+	<button id ="btn_id" style="height:50px;width:100px;">ClickHere</button>
+	<!--2nd way -->
+
+	<script type="text/javascript">
+		let btn=document.getElementById('btn_id');
+		//btn.onclick =sample //functionname
+		//btn.ondblclick = sample
+		//btn.onmouseover = sample
+		//btn.onmouseremove = sample
+		btn.onmouseout = sample
+		function sample(){
+			document.body.style.background='green';
+
+		}
+		//anonymous function
+	</script>
+
+</body>
+</html>

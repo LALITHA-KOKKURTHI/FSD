@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form validation</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form with JavaScript Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+<form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" >
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" >
+
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" >
+
+    <br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+
+    <br>
+
+    <label for="address">Address:</label>
+    <input type="text area" id="address" name="address">,<br><br>
+
+    <label>
+            <input type="radio" name="option" value="option1"> Option 1
+        </label><br>
+        <label>
+            <input type="radio" name="option" value="option2"> Option 2
+        </label><br>
+        <label>
+            <input type="radio" name="option" value="option3"> Option 3
+        </label><br>
+        <label>select a range:</label>
+	<input type="range"><br>
+   
+
+
+    
+
+    
+
+    
+
+    <input type="submit" value="Register">
+</form>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+         var confirmPassword = document.getElementById("range").value;
+        
+
+        
+
+        // Simple name validation: should not be empty and at least 3 characters long
+        if (name.length < 3) {
+            alert("Name must be at least 3 characters long.");
+            return false;
+        }
+
+        // Simple email validation: should not be empty and should have a valid email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        // Password validation: should not be empty and must match the confirm password field
+        if (password.length === 0) {
+            alert("Password cannot be empty.");
+            return false;
+        }
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+
+        // Get all the radio buttons with the specified name
+            const radioButtons = document.getElementsByName('option');
+
+            // Loop through the radio buttons to check if at least one is selected
+            for (let i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    // At least one radio button is selected, form submission is allowed
+                    
+                    return true;
+                }
+            }
+
+            // If no radio button is selected, display an alert and prevent form submission
+            alert('Please select an option.');
+            return false;
+        }
+         if(range==0){
+            alert('please select the range.');
+            return false;
+    }
+    
+        
+    //    return true;
+    
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

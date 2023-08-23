@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cake</title>
+</head>
+<body>
+       <img id="a" src="images/10.jpeg" 
+      onmouseover="changeImage()"
+      onmouseout="resetImage()" alt="image 1"style="height:300px; width:150px;">
+      <img id="b" src="images/11.jpeg" style="height:300px;width:150px;display:none;" alt="image 2">
+      <script type="text/javascript">
+      	function changeImage(){
+      		document.getElementById("a").style.display="none";
+      		document.getElementById("b").style.display="block";
+
+      	}
+      	function resetImage(){
+      		document.getElementById("a").style.display="block";
+      		document.getElementById("b").style.display="none";
+      	}
+      </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dom Class</title>
+</head>
+<body>
+	<p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BS</p>
+	<p class="topic">JS</p>
+	<script type="text/javascript">
+		let d=document.getElementsByClassName('topic');
+		console.log(d);
+		d[0].innerHTML="Hyper Text Markup Language";
+		d[0].style.color="red";
+		d[1].innerHTML="CasCaddingSheet";
+		d[1].style.color="green";
+		d[2].innerHTML="Bootstrap";
+		d[2].style.color="pink";
+		d[3].innerHTML="Javascript";
+		d[3].style.color="yellow";
+
+		// d[0].style.textTransform="lowercase";
+		// d[1].style.color="red";
+		// d[2].style.color="green";
+		// d[3].style.color="pink";
+	</script>
+
+</body>
+</html>
